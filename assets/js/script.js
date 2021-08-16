@@ -58,11 +58,15 @@ function startTimer() {
 // Creates blanks on screen
 function renderBlanks() {
   // Randomly picks word from words array
- 
+  var wordToBlank = Math.floor(Math.random(words.length));
+  var word = words[wordToBlank];
   // Uses loop to push blanks to blankLetters array
-
+  for (var i = 0; i < word.length; i++){
+    blanksLetters.push[_];
+  }
   // Converts blankLetters array into a string and renders it on the screen
- 
+    var blankString = blanksLetters.toString();
+    console.log(blankString);
 }
 
 // Updates win count on screen and sets win count to client storage
