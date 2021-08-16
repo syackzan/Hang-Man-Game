@@ -21,15 +21,22 @@ var words = ["variable","array", "modulus", "object", "function", "string", "boo
 
 // The init function is called when the page loads 
 function init() {
- function init ()
+  startButton.addEventListener("click", function (){
+    startGame()
+
+  })
 }
 
 // The startGame function is called when the start button is clicked
 function startGame() {
- 
+  renderBlanks()
+  startTimer()
+    
   // Prevents start button from being clicked when round is in progress
 
-}
+
+
+  }
 
 // The winGame function is called when the win condition is met
 function winGame() {
@@ -58,11 +65,15 @@ function startTimer() {
 // Creates blanks on screen
 function renderBlanks() {
   // Randomly picks word from words array
- 
+  var wordToBlank = Math.floor(Math.random(words.length));
+  var word = words[wordToBlank];
   // Uses loop to push blanks to blankLetters array
-
+  for (var i = 0; i < word.length; i++){
+    blanksLetters.push[_];
+  }
   // Converts blankLetters array into a string and renders it on the screen
- 
+    var blankString = blanksLetters.toString();
+    console.log(blankString);
 }
 
 // Updates win count on screen and sets win count to client storage
