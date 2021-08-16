@@ -21,15 +21,22 @@ var words = ["variable","array", "modulus", "object", "function", "string", "boo
 
 // The init function is called when the page loads 
 function init() {
- 
+  startButton.addEventListener("click", function (){
+    startGame()
+
+  })
 }
 
 // The startGame function is called when the start button is clicked
 function startGame() {
- 
+  renderBlanks()
+  startTimer()
+    
   // Prevents start button from being clicked when round is in progress
 
-}
+
+
+  }
 
 // The winGame function is called when the win condition is met
 function winGame() {
