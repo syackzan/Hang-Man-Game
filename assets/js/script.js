@@ -65,14 +65,17 @@ function startTimer() {
 // Creates blanks on screen
 function renderBlanks() {
   // Randomly picks word from words array
-  var wordToBlank = Math.floor(Math.random(words.length));
+  var wordToBlank = Math.floor(Math.random() * words.length);
   var word = words[wordToBlank];
+  console.log(word);
+  console.log(word.length);
   // Uses loop to push blanks to blankLetters array
   for (var i = 0; i < word.length; i++){
-    blanksLetters.push[_];
+    blanksLetters.push("_");
   }
+    console.log(blanksLetters);
   // Converts blankLetters array into a string and renders it on the screen
-    var blankString = blanksLetters.toString();
+    var blankString = blanksLetters.join("");
     console.log(blankString);
 }
 
@@ -125,7 +128,7 @@ document.addEventListener("keydown", function(event) {
 });
 
 // Attach event listener to start button to call startGame function on click
-startButton.addEventListener("click", startGame);
+//startButton.addEventListener("click", startGame);
 
 // Calls init() so that it fires when page opened
 init();
