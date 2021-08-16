@@ -21,7 +21,7 @@ var words = ["variable","array", "modulus", "object", "function", "string", "boo
 
 // The init function is called when the page loads 
 function init() {
- 
+ function init ()
 }
 
 // The startGame function is called when the start button is clicked
