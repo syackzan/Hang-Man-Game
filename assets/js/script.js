@@ -75,7 +75,8 @@ function renderBlanks() {
   }
     console.log(blanksLetters);
   // Converts blankLetters array into a string and renders it on the screen
-    var blankString = blanksLetters.join("");
+    var blankString = blanksLetters.join(" ");
+    wordBlank.textContent = blankString;
     console.log(blankString);
 }
 
